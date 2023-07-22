@@ -13,7 +13,7 @@ const Signupform = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:5000/signup', {
+            const response = await axios.post('https://loginform-7xpk.onrender.com/signup', {
                 firstname,
                 lastname,
                 username,
