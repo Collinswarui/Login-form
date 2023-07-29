@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './Signupform.css';
 
 const Signupform = () => {
     const [firstname, setFirstname] = useState('');
@@ -40,7 +41,7 @@ const Signupform = () => {
 
 
     return (
-        <div>
+        <div className='signupform'>
             <h2>Sign Up</h2>
             <form onSubmit={handleSubmit}>
             <label>
@@ -90,7 +91,7 @@ const Signupform = () => {
         <br />
         <button type="submit">Sign Up</button>
       </form>
-      <p>{message}</p>
+      <p className='error-message'>{message}</p>
         </div>
     );
 };

@@ -1,27 +1,30 @@
-.login-form{
+.signupform {
     max-width: 30%;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1 px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     background-color:rgb(240, 235, 235);
+   
+
 }
-.login-form h2 {
+.signupform h2 {
     margin-bottom: 20px;
     text-align: center;
-}
-.login-form input{
+  }
+  
+  .signupform input {
     display: block;
     width: 90%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-.login-form button {
-    width: 80%;
+  }
+  .signupform button {
+    width: 100%;
     padding: 10px;
     font-size: 16px;
     background-color: #007bff;
@@ -30,19 +33,19 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-
-}
-.login-form button:hover {
+  }
+  .signupform button:hover {
     background-color: #0056b3;
-}
-.error-message {
-    color: #ff0000;
+  }
+  
+
+  .signupform .error-message {
     text-align: center;
     margin-top: 10px;
-}
-
-@media (max-width:600px) {
-    .login-form{
+  }
+  @media (max-width:600px) {
+    .signupform{
         max-width: 60%;
     }
 }
+  
