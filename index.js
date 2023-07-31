@@ -11,7 +11,11 @@ app.use(express.json());
 
 connectDB();
 
-app.use(cors());
+const corsOptions = {
+    origin: 'http://localhost:3000',
+};
+
+app.use(cors(corsOptions));
 
 const users = [];
 
