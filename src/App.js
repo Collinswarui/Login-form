@@ -1,27 +1,17 @@
-import React from  'react';
-import { BrowserRouter as Router, Routes, Route, Link } from  'react-router-dom';
-import Loginform from './components/Loginform';
-import Signupform from './components/Signupform';
-import LandingPage from './components/Landingpage';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Loginform from './components/login/Loginform';
+import Signupform from './components/signup/Signupform';
+import LandingPage from './components/landingpage/Landingpage';
+import Navbar from './components/navbar/landing.navbar'; // Import the Navbar component
+import './components/navbar/landing.navbar.css'; // Import the CSS file for the Navbar
 
 function App() {
   return (
     <Router>
-      <nav>
-        <ul>
-        {/* <li>
-            <Link to="/">Home</Link>
-          </li> */}
-          <li>
-            <Link to="/signup">Sign Up</Link>
-          </li>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-        </ul>
-      </nav>
+      <Navbar /> {/* Include the Navbar component */}
       <Routes>
-      <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/signup" element={<Signupform />} />
         <Route path="/login" element={<Loginform />} />
       </Routes>
